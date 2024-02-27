@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Data Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>CSV Data Viewer</h1>
+    </div>
+
+    <div class="main-content">
+      <div class="input">
+        <input
+          type="file"
+          id="jsonFile"
+          accept=".json"
+          onchange="displayFileName()"
+        />
+        <label for="jsonFile">Choose JSON File</label>
+        <span id="fileName"></span>
+        <button id="clearFileBtn" onclick="clearFile()">Clear File</button>
+        <button onclick="DisplayTable()">View CSV</button>
+        <button id="clearTableBtn" onclick="clearTable()" style="background-color:red">Clear Table</button>
+      </div>
+      <div class="table">
+        <table id="dataTable">
+          <tr>
+            <th>URL</th>
+            <th>Overview</th>
+            <th>Campus</th>
+            <th>Courses</th>
+            <th>Scholarships</th>
+            <th>Admission</th>
+            <th>Placement</th>
+            <th>Results</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
