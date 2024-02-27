@@ -20,11 +20,10 @@
 ### 4. Automated Process
 
 - The script will handle the following tasks automatically:
-  1. **Cleaning**: The input file (`Hyscaler.csv`) will be cleaned, and the cleaned version will be saved inside the `cleaned_csv` folder which will be generated automatically.
-  2. **JSON Generation**: A JSON file with the same name as the input file will be generated inside the `json_file` folder.
+  1. **Cleaning**: The input file (`Hyscaler.csv`) will be cleaned, and the cleaned version will be saved inside the `cleaned_csv` folder which will be generated automatically and will be in the same directory where `cleanRestructure.sh` is present.
+  2. **JSON Generation**: A JSON file with the same name as the input file will be generated inside the `json_file` folder which will be generated automatically and will be in the same directory where `cleanRestructure.sh` is present.
   3. **Web Interface**: The script will open `Table_page.html` in the browser.
-  4. **Data Representation**: In the web interface, you can select the JSON file generated. The JSON file will be located in the `json_file` directory, which is automatically created and is in the same directory as `cleanRestructure.sh`.
-  5. **Web Interface Interaction**: The web interface will present a `Choose JSON File` button by clicking that you can choose the JSON file. After selecting the JSON file, click on the `View CSV` button. This action will render the CSV data as a table. URLs with identical prefixes will be grouped together, and their respective descriptions will be displayed under the appropriate columns.
+  4. **Data Representation**: In the web interface, you can click on the `Choose JSON File` button. The JSON file will be selected, after selecting the JSON file, click on the `View CSV` button. This action will render the CSV data as a table. URLs with identical prefixes will be grouped together, and their respective descriptions will be displayed under the appropriate columns. in the `json_file` directory, which is automatically created and is in the same directory where `cleanRestructure.sh` is present .
 
 ## Example
 
